@@ -6,15 +6,13 @@ but using require syntax ,
 code is not consistent , 
 so we will try to use IMPORT SYNTAX
 */
+
 import dotenv from "dotenv";
-import express from "express";
 import connectDB from "./db/index.js";
-
-
-const app = express();
+import {app} from './app.js'
 
 dotenv.config({
-    path: './env'
+    path: './.env'
 })
 
 connectDB()
